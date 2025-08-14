@@ -3,83 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tabla Responsive</title>
+  <title>App de Datos</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      background-color: #f8f9fa;
+      background-color: #f0f2f5;
+      font-family: 'Segoe UI', sans-serif;
     }
-    .table td, .table th {
-      vertical-align: middle;
+    .card {
+      margin-bottom: 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .card-body {
+      padding: 1rem;
     }
     .btn {
-      padding: 0.4rem 0.6rem;
-      font-size: 0.9rem;
+      flex: 1;
+    }
+    .btn-container {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
     }
   </style>
 </head>
 <body>
   <div class="container py-4">
-    <h2 class="text-center mb-4">Listado de Datos</h2>
-    
-    <div class="table-responsive">
-      <table class="table table-bordered table-striped align-middle">
-        <thead class="table-primary">
-          <tr>
-            <th>Nombre</th>
-            <th>Ciudad</th>
-            <th>Edad</th>
-            <th>Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Juan Pérez</td>
-            <td>Buenos Aires</td>
-            <td>29</td>
-            <td>
-              <div class="d-flex gap-2">
-                <button class="btn btn-sm btn-success">Editar</button>
-                <button class="btn btn-sm btn-danger">Borrar</button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>María Gómez</td>
-            <td>Córdoba</td>
-            <td>34</td>
-            <td>
-              <div class="d-flex gap-2">
-                <button class="btn btn-sm btn-success">Editar</button>
-                <button class="btn btn-sm btn-danger">Borrar</button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Carlos Ruiz</td>
-            <td>Rosario</td>
-            <td>41</td>
-            <td>
-              <div class="d-flex gap-2">
-                <button class="btn btn-sm btn-success">Editar</button>
-                <button class="btn btn-sm btn-danger">Borrar</button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Lucía Fernández</td>
-            <td>Mendoza</td>
-            <td>25</td>
-            <td>
-              <div class="d-flex gap-2">
-                <button class="btn btn-sm btn-success">Editar</button>
-                <button class="btn btn-sm btn-danger">Borrar</button>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <h2 class="text-center mb-4">Listado de Personas</h2>
+
+    <!-- Tarjeta ejemplo -->
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Juan Pérez</h5>
+        <p class="card-text"><strong>Ciudad:</strong> Buenos Aires</p>
+        <p class="card-text"><strong>Edad:</strong> 29</p>
+        <div class="btn-container">
+          <button class="btn btn-success btn-sm">Editar</button>
+          <button class="btn btn-danger btn-sm">Borrar</button>
+        </div>
+      </div>
     </div>
+
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">María Gómez</h5>
+        <p class="card-text"><strong>Ciudad:</strong> Córdoba</p>
+        <p class="card-text"><strong>Edad:</strong> 34</p>
+        <div class="btn-container">
+          <button class="btn btn-success btn-sm">Editar</button>
+          <button class="btn btn-danger btn-sm">Borrar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Carlos Ruiz</h5>
+        <p class="card-text"><strong>Ciudad:</strong> Rosario</p>
+        <p class="card-text"><strong>Edad:</strong> 41</p>
+        <div class="btn-container">
+          <button class="btn btn-success btn-sm">Editar</button>
+          <button class="btn btn-danger btn-sm">Borrar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Lucía Fernández</h5>
+        <p class="card-text"><strong>Ciudad:</strong> Mendoza</p>
+        <p class="card-text"><strong>Edad:</strong> 25</p>
+        <div class="btn-container">
+          <button class="btn btn-success btn-sm">Editar</button>
+          <button class="btn btn-danger btn-sm">Borrar</button>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
